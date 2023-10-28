@@ -1,6 +1,99 @@
-#header{
-    margin-top: 56px;
+/* navBar */
+#mainNav{
+  border: 2px solid black;
+  z-index: 5000;
+  background-color: #e0ebf3;
+  height: 7rem;
 }
+
+/* header */
+#header{
+  border: 2px solid yellow;
+  z-index: 5000;
+  width: 100%;
+  margin-top: 108px;
+  height: 39rem;
+  /* margin: 10rem; */
+}
+#headerdiv{
+  display: flex;
+  flex-direction: column;
+}
+#btn-groups{
+  display: flex;
+  flex-direction: row;
+}
+
+/* secction - about */
+#about{
+  border: 2px solid black;
+  z-index: 5000;
+  width: 100%;
+  height: 45rem;
+  padding: 7rem 7rem;
+  /* align-items: center; */
+  justify-content: center;
+  /* margin: -3rem; */
+}
+#aboutdiv{
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  /* margin: -3rem; */
+}
+#aboutdiv h2{
+  text-align: center;
+}
+#btn-div{
+  width: 80%;
+  display: grid;
+  grid-template-columns: 13rem 13rem 13rem 13rem;
+  grid-template-rows: 13rem 13rem;
+}
+.excards{
+  margin: 1rem 1rem;
+  padding: 4rem 4rem;
+  height: 12rem;
+  width: 12rem;
+}
+
+/* section - services */
+#services{
+  border: 2px solid red;
+  z-index: 5000;
+  width: 100%;
+  height: 45rem;
+}
+#servicesdiv{
+  margin: 10rem 10rem;
+}
+
+/* section - contact */
+#contact{
+  border: 2px solid red;
+  z-index: 5000;
+  width: 100%;
+  height: 45rem;
+}
+#contactdiv{
+  margin: 10rem 10rem;
+}
+
+/* section - library */
+#library{
+  border: 2px solid red;
+  z-index: 5000;
+  width: 100%;
+  height: 45rem;
+}
+#librarydiv{
+  margin: 10rem 10rem;
+}
+#librarydiv img{
+  height: 5rem;
+  width: 5rem;
+}
+
 
 .btm-pad{
     padding-bottom: 50px;
@@ -85,3 +178,8 @@
     color: #fffbf5;
     font-style: italic;
   }
+
+  /* usable classes */
+.primarybg{
+  background-color: red;
+}

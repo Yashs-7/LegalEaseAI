@@ -10,12 +10,13 @@
 </head>
 <body>
 	<!-- Navigation-->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+	<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
             <div class="container px-4">
                 <a class="navbar-brand" href="#page-top">LegalEaseAI</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
+						<li class="nav-item"><a class="nav-link" href="#header">Search</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -23,86 +24,93 @@
                 </div>
             </div>
     </nav>
+
+
 	<!-- Header-->
 	<header class="bg-primary bg-gradient text-white btm-pad" id="header">
-            <div class="container px-4 text-center" >
+            <div class="container px-4 text-center" id="headerdiv" >
                 <h1 class="fw-bolder btm-pad pt-5">Find templates you can trust</h1>
 				<div class="inline">
 				<input id="search-bar" type="search" placeholder="What're you searching for?" aria-describedby="button-addon1" class="form-control border-0 bg-light"><button type="submit" class="btn btn-dark btn-block shadow-sm">Search</button>
 				</div>
-
-				<div class="btn-group">
-				<button type="button" class="btn btn-danger dropdown-toggle m-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Contract Type
-				</button>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="#">Action</a>
-					<a class="dropdown-item" href="#">Another action</a>
-					<a class="dropdown-item" href="#">Something else here</a>
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="#">Separated link</a>
-				</div>
-				</div>
-				<div class="btn-group">
-				<button type="button" class="btn btn-danger dropdown-toggle m-2 " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Governing Law
-				</button>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="#">Action</a>
-					<a class="dropdown-item" href="#">Another action</a>
-					<a class="dropdown-item" href="#">Something else here</a>
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="#">Separated link</a>
-				</div>
-				</div>
-				<div class="btn-group">
-				<button type="button" class="btn btn-danger dropdown-toggle m-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Language
-				</button>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="#">Action</a>
-					<a class="dropdown-item" href="#">Another action</a>
-					<a class="dropdown-item" href="#">Something else here</a>
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="#">Separated link</a>
-				</div>
-				</div>
-				<div class="btn-group">
-				<button type="button" class="btn btn-danger dropdown-toggle m-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Sector
-				</button>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="#">Action</a>
-					<a class="dropdown-item" href="#">Another action</a>
-					<a class="dropdown-item" href="#">Something else here</a>
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="#">Separated link</a>
-				</div>
+				<div id="headerDropdowns">
+					<div class="btn-group">
+						<button type="button" class="btn btn-danger dropdown-toggle m-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Contract Type
+						</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Separated link</a>
+						</div>
+					</div>
+					<div class="btn-group">
+						<button type="button" class="btn btn-danger dropdown-toggle m-2 " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Governing Law
+						</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Separated link</a>
+						</div>
+					</div>
+					<div class="btn-group">
+						<button type="button" class="btn btn-danger dropdown-toggle m-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Language
+						</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Separated link</a>
+						</div>
+					</div>
+					<div class="btn-group">
+						<button type="button" class="btn btn-danger dropdown-toggle m-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Sector
+						</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Separated link</a>
+						</div>
+					</div>
 				</div>
             </div>
         </header>
+
+
         <!-- About section-->
         <section id="about">
-            <div class="container px-4 mb-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="p-4">Choose one of these to get started</h2>
-                       <a href="page1.php"><button type="button" class="btn btn-outline-primary m-2">Sales contract</button></a>
-                        <a href="page2.php"><button type="button" class="btn btn-outline-secondary m-2">Software Licensing</button></a>
-                        <button type="button" class="btn btn-outline-success m-2">Assign copywright in music</button>
-                        <button type="button" class="btn btn-outline-danger m-2">Appoint franchise License</button>
-                        <button type="button" class="btn btn-outline-warning m-2">Amend a contract</button>
-                        <button type="button" class="btn btn-outline-info m-2">Sue your college</button>
-                        <button type="button" class="btn btn-outline-dark m-2">Collaborate with partners</button>
-                    </div>
+            <div class="container px-4 mb-4 row gx-4 justify-content-center" id="aboutdiv">
+                <div class="col-lg-8">
+                    <h2 class="p-4">Top Categories</h2>
+					<div id="btn-div">
+                    	<a href="page1.php"><button type="button" class="btn btn-outline-primary m-2 excards">Sales contract</button></a>
+                    	<a href="page2.php"><button type="button" class="btn btn-outline-secondary m-2 excards">Software Licensing</button></a>
+                    	<a href="page2.php"><button type="button" class="btn btn-outline-success m-2 excards">Assign copywright in music</button></a>
+                        <a href="page2.php"><button type="button" class="btn btn-outline-danger m-2 excards">Appoint franchise License</button></a>
+                        <a href="page2.php"><button type="button" class="btn btn-outline-warning m-2 excards">Amend a contract</button></a>
+                        <a href="page2.php"><button type="button" class="btn btn-outline-info m-2 excards">Sue your college</button></a>
+                        <a href="page2.php"><button type="button" class="btn btn-outline-dark m-2 excards">Collaborate with partners</button></a>
+					</div>
                 </div>
             </div>
         </section>
+
+
         <!-- Services section-->
         <section class="bg-light" id="services">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
+                    <div class="col-lg-8" id="servicesdiv">
                         <h2>Services we offer</h2>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
                     </div>
@@ -110,17 +118,39 @@
             </div>
         </section>
 		
+
         <!-- Contact section-->
         <section id="contact">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
+                    <div class="col-lg-8" id="contactdiv">
                         <h2>Contact us</h2>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
                     </div>
                 </div>
             </div>
         </section>
+
+
+		<!-- Random section -->
+		<section id="library">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8" id="librarydiv">
+                        <h2>India's biggest open legal library</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+						<img src="https://assets-global.website-files.com/616d3e7ac23fd24a47f3ddf0/6446cc92ff243f731f754f7b_Document%20library%202.gif" alt="Error">
+						<div id="smallBox">
+							<li id="box">Clauses</li>
+							<li id="box">Templates</li>
+							<li id="box">Uses</li>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
